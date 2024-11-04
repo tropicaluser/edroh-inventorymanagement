@@ -58,3 +58,7 @@ npm i -D nodemon@3.1.4 @types/cors@2.8.17 @types/express@4.17.21 @types/morgan@1
 npm run dev
 curl http://localhost:8000/hello
 [returns Hello World!]
+
+### Dashboard Page
+
+curl http://localhost:8000/dashboard
