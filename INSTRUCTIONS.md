@@ -50,4 +50,11 @@ npx prisma generate
 npx prisma migrate dev --name init
 npm run seed
 
-### Backe
+### Backend & Packages Installations
+
+npm i rimraf@6.0.1 express@4.19.2 body-parser@1.20.2 cors@2.8.5 dotenv@16.4.5 helmet@7.1.0 morgan@1.10.0 concurrently@8.2.2
+npm i -D nodemon@3.1.4 @types/cors@2.8.17 @types/express@4.17.21 @types/morgan@1.9.9
+
+npm run dev
+curl http://localhost:8000/hello
+[returns Hello World!]
