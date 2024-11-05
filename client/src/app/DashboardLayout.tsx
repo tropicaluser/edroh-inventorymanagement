@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import Navbar from "@/app/(components)/Navbar";
 import Sidebar from "@/app/(components)/Sidebar";
 
-import StoreProvider, { useAppSelector } from "./redux";
+import { useAppSelector } from "./redux";
 
 const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
   const isSidebarCollapsed = useAppSelector(
@@ -40,12 +40,4 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
   );
 };
 
-const DashboardWrapper = ({ children }: { children: React.ReactNode }) => {
-  return (
-    <StoreProvider>
-      <DashboardLayout>{children}</DashboardLayout>
-    </StoreProvider>
-  );
-};
-
-export default DashboardWrapper;
+export default DashboardLayout;
