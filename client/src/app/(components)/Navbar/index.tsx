@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import { useAppDispatch, useAppSelector } from "@/app/redux";
 import { setIsDarkMode, setIsSidebarCollapsed } from "@/state";
+import Image from "next/image";
 
 const Navbar = () => {
   const dispatch = useAppDispatch();
@@ -63,7 +64,13 @@ const Navbar = () => {
           </div>
           <hr className="w-0 h-7 border border-solid border-l border-gray-300 mx-3" />
           <div className="flex items-center gap-3 cursor-pointer">
-            Image
+            <Image
+              src="https://s3-inventorymanagement-template.s3.eu-north-1.amazonaws.com/profile.jpg"
+              alt="profile"
+              width={50}
+              height={50}
+              className="rounded-full h-full object-cover"
+            />
             <span className="font-semibold">Stephanie Hallberg</span>
           </div>
         </div>
