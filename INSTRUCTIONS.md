@@ -250,9 +250,8 @@ npm run dev
 
 In AWS - EC2 - Tab - Instances - "select entity" - Details
 
-- Public IPv4 address - "copy address"
+- Public IPv4 address - "copy address" - change to http://(address)
 - paste in browser - show "Cannot GET /"
--
 
 In AWS EC2:
 
